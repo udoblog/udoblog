@@ -1,10 +1,10 @@
 # Site settings
-title: UDO 文件
+title: UDO 知識管理
 header-img: img/home-bg.jpg
 email: sherlock@cht.com.tw
 description: "Write your site description here. It will be used as your sites meta description as well!"
 #baseurl: "/startbootstrap-clean-blog-jekyll"
-url: "http://yourdomain.com"
+url: "http://udoblog.github.io"
 twitter_username: 
 github_username:  udoblog
 facebook_username:  twudo
