@@ -1,12 +1,15 @@
 {
-    "name": "clean-blog",
-    "title": "Clean Blog",
+    "name": "erayaydin-blog",
+    "title": "Eray Aydın Personal Blog",
     "version": "1.0.0",
-    "homepage": "http://startbootstrap.com",
-    "author": "Start Bootstrap",
+    "homepage": "http://erayaydin.github.io",
+    "authors": {
+        "baseTheme": "Start Bootstrap",
+        "developer": "Eray Aydın"
+    },
     "license": {
         "type": "Apache 2.0",
-        "url": "https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE"
+        "url": "https://github.com/erayaydin/erayaydin.github.io/LICENSE"
     },
     "devDependencies": {
         "grunt": "~0.4.5",
@@ -17,6 +20,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll.git"
+        "url": "https://github.com/erayaydin/erayaydin.github.io.git"
     }
 }

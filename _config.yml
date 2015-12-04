@@ -1,9 +1,9 @@
 # Site settings
 title: UDO 知識管理
-header-img: img/home-bg.jpg
+header-img: media/anasayfa.jpg
 email: sherlock@cht.com.tw
-description: "Write your site description here. It will be used as your sites meta description as well!"
-#baseurl: "/startbootstrap-clean-blog-jekyll"
+description: "Design Is Endless Trip"
+baseurl: ""
 url: "http://udoblog.github.io"
 twitter_username: 
 github_username:  udoblog
@@ -11,152 +11,7 @@ facebook_username:  twudo
 
 # Build settings
 markdown: kramdown
-future:      true
 highlighter: pygments
 permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-
-
-
-links:
-  - title: Home
-    url: /
-    external: false
-    icon: home
-  - title: Featured Posts
-    url: /featured
-  - title: Categories
-    url: /categories
-  - title: About
-    url: /about
-
-
-
-
-prose:
-  siteurl: 'http://udoblog.github.io/'
-  relativeLinks: 'http://udoblog.github.io/links.jsonp'
-  media: 'images/post'
-  metadata:
-    _posts:
-      - name: "published"
-        field:
-          label: "Published"
-          element: "checkbox"
-          value: "true"
-      - name: "layout"
-        field:
-          element: "hidden"
-          label: "Layout"
-          value: "post"
-      - name: "title"
-        field:
-          label: "Title"
-          element: "text"
-          value: "An Awesome Headline!"
-      - name: "description"
-        field:
-          element: "text"
-          label: "Description"
-          placeholder: "Enter Post Description"
-      - name: "modified"
-        field:
-          element: "text"
-          label: "Has this page been modified?"
-          placeholder: "YYYY-MM-DD"
-      - name: "categories"
-        field:
-          element: "multiselect"
-          label: "Add categories"
-          placeholder: "Choose categories"
-          value: personal
-          options:
-            - name: "Personal"
-              value: personal
-            - name: "Engineering"
-              value: engineering
-            - name: "Mathematics"
-              value: mathematics
-            - name: "Physics"
-              value: physics
-            - name: "Psychology"
-              value: psychology
-            - name: "Photography"
-              value: photography
-            - name: "Interesting"
-              value: interesting
-            - name: "Web-Development"
-              value: webdevelopment
-          alterable: true
-      - name: "tags"
-        field:
-          element: "text"
-          label: "Tags"
-          placeholder: "Enter tags, separated by spaces"
-      - name: "imagefeature"
-        field:
-          element: "text"
-          label: "Featured Image"
-          placeholder: "somefile.jpg"
-      - name: "covereffect"
-        field:
-          element: "select"
-          label: "Select Cover Effect"
-          placeholder: "Choose Type"
-          value:
-          options:
-            - name: "None"
-              value: 
-            - name: "slice"
-              value: slice
-            - name: "push"
-              value: push
-      - name: "location"
-        field:
-          element: "text"
-          label: "Location"
-          placeholder: "Some Place"
-      - name: "locationgps"
-        field:
-          element: "text"
-          label: "Location GPS point"
-          placeholder: "long, lat"
-      - name: "mathjax"
-        field:
-          element: "checkbox"
-          label: "MathJax"
-          value: false
-      - name: "featured"
-        field:
-          element: "checkbox"
-          label: "Featured?"
-          value: false
-      - name: "comments"
-        field:
-          element: "checkbox"
-          label: "Comments"
-          value: false
-      - name: "chart"
-        field:
-          element: "checkbox"
-          label: "Chart?"
-          value: false
-      - name: "charttype"
-        field:
-          element: "select"
-          label: "Select Chart Type"
-          placeholder: "Choose Type"
-          value:
-          options:
-            - name: "None"
-              value: 
-            - name: "pie"
-              value: pie
-            - name: "serial"
-              value: serial
-      - name: "jquery"
-        field:
-          element: "checkbox"
-          label: "Require JQuery?"
-          value: false
