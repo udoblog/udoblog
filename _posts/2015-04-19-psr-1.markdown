@@ -5,7 +5,7 @@ subtitle:   "Basit Kodlama Standartları"
 date:       2015-04-19 12:00:00
 author:     "Eray Aydın"
 header-img: "media/psr-1.jpg"
-tags: [php]
+tags: [pm]
 ---
 
 <div class="alert alert-warning">
@@ -24,7 +24,7 @@ Bu bölümde standart kodlama elementlerinin kullanımı sırasında yapmanız g
 - Dosyalarınız ya sadece deklare etmeli (sınıflar, fonksiyonlar, sabitler, vs.) yada yan-işlem yapmalıdır.(çıktı verme, .ini/.xml güncelleme vs.). Kesinlikle iki işlem için de kullanmayın.
 - Namespace ve sınıflar, PSR'ninautoloading(otomatik yükleme) sistemine uymalıdır. [PSR-0, PSR-4]
 - Sınıf isimleri baş harfi büyük olmalıdır. (Örn; BlogController, SystemLog)
-- Sınıf sabitleri tamamı büyük olmalı ve alt çizgi ile ayırılmalıdır. (Örn; DIRECTORY_SEPARATOR, DEBUG 
+- Sınıf sabitleri tamamı büyük olmalı ve alt çizgi ile ayırılmalıdır. (Örn; DIRECTORY_SEPARATOR, DEBUG
 - Metot isimleri, ilk harf hariç kelime başları büyük olmalıdır. (Örn; showIndex, editPost)
 
 ### Dosyalar
@@ -39,7 +39,7 @@ PHP kodunuz `<?php ... ?>` veya `<?= ... ?>` etiketlerini kullanmalıdır.
 PHP dosyanızın kodlaması UTF-8 BOM'suz olmalıdır.
 
 #### Yan-İşlem
-Bir dosyanız ya sadece deklare yada yan-işlem yapmalıdır. 
+Bir dosyanız ya sadece deklare yada yan-işlem yapmalıdır.
 
 "Yan-işlem" derken bahsetmek istediğim, bir yapı oluştururken hem sınıf, metot, sabit deklare edip hem de kullanılmamalıdır. Dosya include yapılmalıdır.
 
