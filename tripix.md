@@ -1,9 +1,4 @@
----
-layout: page
-title: "TriPix"
-description: "Orkun'un TriPix Oyunu"
-header-img: "media/tripix.jpg"
----
+
 
 Dostum, en iyi arkadaşım, [Orkun](http://orkun.cakilkaya.com)'un sırf can sıkıntısından 
 yaptığı vakit geçirmelik güzel bir oyun; **TriPix**
