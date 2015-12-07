@@ -15,10 +15,10 @@ description: "Design Is Endless Trip"
         {% endif %}
     </a>
     <p class="post-meta">
-        Yazan: {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} - 
-        Tarih: {{ post.date | date: "%-d.%m.%Y" }}
+        作者: {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} - 
+        日期: {{ post.date | date: "%-d.%m.%Y" }}
         {% if post.tags.size > 0 %}
-             - Kategoriler:
+             - 歸類:
             {% for post_tag in post.tags %}
                 {% assign fl = forloop %}
                 {% for data_tag in site.data.tags %}

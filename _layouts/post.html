@@ -12,7 +12,7 @@ layout: default
                     {% if page.subtitle %}
                     <h2 class="subheading">{{ page.subtitle }}</h2>
                     {% endif %}
-                    <span class="meta">Yazan: {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} - Tarih: {{ page.date | date: "%-d.%m.%Y" }}</span>
+                    <span class="meta">作者: {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} - 日期: {{ page.date | date: "%-d.%m.%Y" }}</span>
                 </div>
             </div>
         </div>
