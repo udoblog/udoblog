@@ -1,50 +1,98 @@
 ---
 layout: page
-description: "Design Is Endless Trip"
+title: "UDO's Blog"
+description: "“There is only one good, knowledge, and one evil, ignorance.” ― Socrates"
+header-img: "img/home-bg.jpg"
 ---
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">
-        作者: {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} - 
-        日期: {{ post.date | date: "%-d.%m.%Y" }}
-        {% if post.tags.size > 0 %}
-             - 歸類:
-            {% for post_tag in post.tags %}
-                {% assign fl = forloop %}
-                {% for data_tag in site.data.tags %}
-                    {% if data_tag.slug == post_tag %}
-                        <a href="/tag/{{ data_tag.slug }}">{{ data_tag.name }}</a>{% if fl.last == false %}, {% endif %}
-                    {% endif %}
-                {% endfor %}
-            {% endfor %}
-        {% endif %}
-    </p>
-</div>
-<hr>
-{% endfor %}
+<html class="no-js" lang="zh-Hant-TW">
+<head>
+	<meta content="charset=utf-8">
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; 更新文章</a>
+<!-- CSS -->
+	<link rel="stylesheet" href="../css/intro.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+	<!-- Modernizr -->
+  <script src="js/modernizr.js"></script>
+
+<!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <!-- Back To Top -->
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: false,
+        slideshowSpeed: 12000,
+        pausePlay: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+
+ <!-- intro -->
+<div class="intro">
+  <div class="row">
+
+        <div class="col-md-left-cntct">
+
+<h2>Welcome to CHT UDO's Blog!</h2>
+     
+<h3>記錄UDO的專案交付產出，知識分享等</h3>
+<br>
+<br>
+<br>
+</div>  
+
+
+        <div class="col-md-right-cntct">
+    {% include links.html %}
+         </div>  
+ 
+ </div>
+</div>
+
+
+<!-- slider -->
+
+	<div class="flexslider" style="display:none;">
+  <ul class="slides">
+    <li>
+      <img src="img/slider/bg1.jpg" />
+<p class="flex-caption">Source: <a href="https://unsplash.com/">Unsplash</a></p>
     </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">更舊文章 &rarr;</a>
+    <li>
+      <img src="img/slider/bg2.jpg" />
+<p class="flex-caption">Source: <a href="https://unsplash.com/">Unsplash</a></p>
     </li>
-    {% endif %}
-</ul>
-{% endif %}
+    <li>
+      <img src="img/slider/bg3.jpg" />
+<p class="flex-caption">Source: <a href="https://unsplash.com/">Unsplash</a></p>
+    </li>
+      </ul>
+</div>
+
+
+ 
+<br>
+<h6><p>Image Source: <a href="http://www.wallconvert.com/wallpapers/fantasy/on-cliffs-edge-18900.html">Wallconvert</a></p></h6>
+
+
+
+
+       </body>
+    </html>

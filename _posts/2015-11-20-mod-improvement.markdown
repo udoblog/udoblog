@@ -1,11 +1,14 @@
 ---
 layout:     post
-title:      "【MOD】【對外簡報】【104/11月會 - MOD改善項目報告】"
+title:      "104年11月會 - MOD改善項目報告"
 subtitle:   "11/20為對蔡董簡報MOD的多首頁概念"
 date:       2015-11-20 12:00:00
 author:     "Sherlock"
-header-img: "media/psr-1.jpg"
-tags: [pm]
+header-img: "img/blog/header/post-bg-02.jpg"
+thumbnail: /img/blog/thumbs/thumb02.png
+tags: [project management, report]
+categories: [project management, MOD]
+
 ---
 11/20為對蔡董簡報MOD的多首頁概念。
 

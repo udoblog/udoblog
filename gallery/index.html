@@ -1,0 +1,78 @@
+---
+layout: page
+title: "Gallery"
+description: "“I have no special talents.I am only passionately curious.” ― Albert Einstein"
+header-img: "img/gallery-bg2.jpg"
+---
+
+<html class="no-js" lang="zh-Hant-TW">
+<head>
+	<meta content="charset=utf-8">
+
+  
+<!-- CSS -->
+	<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+
+	<!-- Modernizr -->
+  <script src="../js/modernizr.js"></script>
+</head>
+
+    <body>
+  <!-- slider -->
+    <section class="slider">
+	<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="https://c1.staticflickr.com/1/600/22560239132_33ecf08370_z.jpg" />
+<p class="flex-caption">UDO Halloween</p>
+    </li>
+
+    <li>
+      <img src="https://c1.staticflickr.com/1/732/23119920224_36f4280ba4_z.jpg" />
+<p class="flex-caption">UDO Halloween</p>
+    </li>
+    <li>
+      <img src="https://c2.staticflickr.com/6/5824/22386978939_ef33bf7ee5_z.jpg" />
+<p class="flex-caption">UDO Halloween</p>
+    </li>
+
+    <li>
+      <img src="https://c2.staticflickr.com/6/5687/22585018371_d4a37c10f9_z.jpg" />
+<p class="flex-caption">UDO Halloween</p>
+    </li>
+
+
+      </ul>
+</div>
+      </section>
+
+<!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- FlexSlider -->
+  <script defer src="../js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: "false",
+        slideshowSpeed: "3200",
+        pausePlay: "true",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+<br>
+<h6>Image Source: <a href="https://unsplash.com/photos/7bc0i0t4pRo">UNSPLASH</a>
+
+
+
+</body></html>
