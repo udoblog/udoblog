@@ -35,7 +35,7 @@ header-img: "img/search-bg2.jpg"
     </style>
 
 <!-- Html Elements for Search -->
-<input type="text" id="search-input" placeholder="Enter keywords...">
+<input type="text" id="search-input" placeholder="輸入關鍵字...">
 <ul id="results-container" style="list-style-type: none;"></ul>    
 
 <!-- Script pointing to jekyll-search.js -->
@@ -48,7 +48,7 @@ header-img: "img/search-bg2.jpg"
         resultsContainer: document.getElementById('results-container'),
         json: '{{ site.baseurl }}/search.json',
         searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-        noResultsText: 'No results found',
+        noResultsText: '無符合結果',
         limit: 10,
         fuzzy: true,
         exclude: ['Welcome']
@@ -57,7 +57,7 @@ header-img: "img/search-bg2.jpg"
 
 <br>
   <div id="tags">
-  	<h5>tags</h5>
+  	<h5>標籤</h5>
    {% assign tags = site.tags | sort %}
 {% for tag in tags %}
  <span class="site-tag">
@@ -79,7 +79,7 @@ header-img: "img/search-bg2.jpg"
 
 <br>
   <div id="categories">
-  	<h5>categories:</h5>
+  	<h5>目錄</h5>
    {% assign categories = site.categories | sort %}
 {% for category in categories %}
  <span class="site-category">
@@ -99,5 +99,5 @@ header-img: "img/search-bg2.jpg"
 </style>
 
 <br>
-<h6>Image Source: <a href="https://source.unsplash.com/NuE8Nu3otjo">UNSPLASH</a></h6>
+<h6>圖片來源：<a href="https://source.unsplash.com/NuE8Nu3otjo">UNSPLASH</a></h6>
 
