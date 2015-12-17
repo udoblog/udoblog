@@ -64,14 +64,17 @@ hr.small {
 }
 
 /* Side Menu */
-
+/* 縮起來的狀態*/
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
     right: 0;
     width: 250px;
+    
     height: 100%;
+    
     margin-right: -250px;
+    
     overflow-y: auto;
     background: #222;
     -webkit-transition: all 0.4s ease 0s;
@@ -80,19 +83,32 @@ hr.small {
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
-
+.close-icon {
+    top: 2em;
+    right: 2em; 
+}
 .sidebar-nav {
     position: absolute;
-    top: 0;
-    width: 250px;
-    margin: 0;
-    padding: 0;
+    top: 50%;
+    left: 50%;
+   
+    width: 80%;
+    
+    text-align: center;
+    font-size: 1.5em;
+  /*  line-height: 1.35em;
+    
+    text-decoration: none; 
+    */
     list-style: none;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+
 }
 
 .sidebar-nav li {
     text-indent: 20px;
-    line-height: 40px;
+    line-height: 1.5em;
 }
 
 .sidebar-nav li a {
@@ -135,8 +151,12 @@ hr.small {
 }
 
 #sidebar-wrapper.active {
-    right: 250px;
-    width: 250px;
+  /*  right: 250px;
+    width: 400px;
+    */
+    width: 100%;
+    
+    margin: 0;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;

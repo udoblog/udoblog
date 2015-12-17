@@ -1,24 +1,27 @@
+<!--以下是左上Menu按鈕(關起來的時候)-->
 <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+
 <nav id="sidebar-wrapper">
+<a id="menu-close" href="{{ site.baseurl }}/" class="btn btn-light btn-lg pull-right toggle close-icon"><i class="fa fa-times"></i></a>
   <ul class="sidebar-nav">
-    <a id="menu-close" href="{{ site.baseurl }}/" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+    
     <!--
     <li class="sidebar-brand">
     
     -->
-    <li>
-      <a href="{{ site.baseurl }}/"  onclick = $("#menu-close").click(); class="nowrap" >Ux Design Office</a>
+    <li >
+      <a href="{{ site.baseurl }}/"  onclick = $("#menu-close").click();>Ux Design Office</a>
     </li>
-    <li>
+    <li >
       <a href="{{ root_url }}/writing/" onclick = $("#menu-close").click();>文章</a>
     </li>
-    <li>
+    <li >
       <a href="{{ root_url }}/gallery/" onclick = $("#menu-close").click();>活動</a>
     </li>
-    <li>
+    <li >
       <a href="{{ root_url }}/about/" onclick = $("#menu-close").click();>關於</a>
     </li>
-    <li>
+    <li >
       <a href="{{ root_url }}/search/" class="nav-search-link" title="SEARCH">搜尋
      <!--  
         <span class="fa fa-search nav-search-icon"></span>

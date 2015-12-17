@@ -4,7 +4,7 @@ $("#menu-close").click(function(e) {
   $("#sidebar-wrapper").toggleClass("active");
 });
 
-// Opens the sidebar menu
+// Opens the sidebar menu,做css狀態的切換
 $("#menu-toggle").click(function(e) {
   e.preventDefault();
   $("#sidebar-wrapper").toggleClass("active");
